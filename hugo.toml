@@ -1,0 +1,19 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-gb"
+title = "David Mark H"
+theme = "PaperMod"
+
+
+[params]
+  author = "David"
+  description = "Independent Azure Databricks pipeline builds"
+  ShowFooter = true
+  ShowCopyright = true
+
+[params.footer]
+  text = "Independent work, outside primary employment."
+
+[menu]
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
