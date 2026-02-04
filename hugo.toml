@@ -1,11 +1,11 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://markdmh.uk/"
 languageCode = "en-gb"
 title = "David Mark H"
 theme = "PaperMod"
 
 
 [params]
-  author = "David"
+  author = "admim"
   description = "Independent Azure Databricks pipeline builds"
   ShowFooter = true
   ShowCopyright = true

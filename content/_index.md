@@ -1,5 +1,7 @@
 ---
 title: "Home"
+menu: "main"
+weight: 1
 ---
 
 I build **production-ready Databricks ingestion pipelines on Azure** for early-stage teams.  
