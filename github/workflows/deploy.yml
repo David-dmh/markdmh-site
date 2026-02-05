@@ -3,8 +3,7 @@ name: Deploy Hugo site to gh-pages
 on:
   push:
     branches:
-      - main  # Build & deploy when main branch changes
-  pull_request:
+      - main
 
 permissions:
   contents: write
