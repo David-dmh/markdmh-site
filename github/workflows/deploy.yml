@@ -1,18 +1,21 @@
-name: Deploy Hugo site
+name: Deploy Hugo site to gh-pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # Build & deploy when main branch changes
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repository
+      # Checkout the repository
       - uses: actions/checkout@v4
         with:
-          submodules: true  # Required if theme is a submodule
+          submodules: true
+          fetch-depth: 0  # needed for .Lastmod, .GitInfo
 
       # Install Hugo
       - name: Install Hugo
@@ -22,30 +25,30 @@ jobs:
           extended: true
 
       # Build the site
-      - name: Build
+      - name: Build Hugo
         run: hugo --minify
 
-      # Add CNAME for custom domain
+      # Ensure CNAME is in public/
       - name: Add CNAME
         run: echo "markdmh.uk" > public/CNAME
 
-      # Deploy directly to main branch root
-      - name: Deploy
+      # Deploy to gh-pages branch
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: main     # <--- deploy to main branch
+          publish_branch: gh-pages        # deploys compiled site to gh-pages
           user_name: "github-actions"
           user_email: "github-actions@github.com"
-          keep_files: true         # preserve other files in main root
+          keep_files: false               # clean old files before deploying
 
-      # Test that deployed pages are reachable
+      # Test deployed pages
       - name: Test Deployed Site
         run: |
           SITE="https://markdmh.uk"
-          PAGES=("/" "/about/" "/services/" "/contact/")
-          MAX_RETRIES=3
+          PAGES=("/" "/about/" "/services/" "/services/azure-databricks-pipeline/" "/contact/")
+          MAX_RETRIES=5
           RETRY_DELAY=10
 
           for PAGE in "${PAGES[@]}"; do
