@@ -2,7 +2,8 @@ baseURL = "https://markdmh.uk/"
 languageCode = "en-gb"
 title = "David Mark H"
 theme = "PaperMod"
-
+canonifyURLs = true
+relativeURLs = false
 
 [params]
   author = "admim"

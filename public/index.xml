@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Home on David Mark H</title><link>https://markdmh.uk/</link><description>Recent content in Home on David Mark H</description><generator>Hugo -- 0.155.2</generator><language>en-gb</language><atom:link href="https://markdmh.uk/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://markdmh.uk/about/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://markdmh.uk/about/about/</guid><description>&lt;p&gt;I’m a data engineer and specialise in building data pipelines and platforms on Azure.&lt;/p&gt;
-&lt;p&gt;Outside of my primary work, I occasionally take on &lt;strong&gt;small, focused pipeline projects&lt;/strong&gt; for early-stage teams. These projects are designed to deliver clear, functional results quickly, without long-term commitments or ongoing maintenance.&lt;/p&gt;
-&lt;p&gt;This site describes that service offering in a simple, transparent way.&lt;/p&gt;</description></item><item><title>Azure Databricks Ingestion Pipeline</title><link>https://markdmh.uk/services/azure-databricks-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://markdmh.uk/services/azure-databricks-pipeline/</guid><description>&lt;h3 id="fixed-scope-databricks-pipeline-build"&gt;Fixed-scope Databricks pipeline build&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Home on David Mark H</title><link>https://markdmh.uk/</link><description>Recent content in Home on David Mark H</description><generator>Hugo -- 0.155.2</generator><language>en-gb</language><atom:link href="https://markdmh.uk/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Databricks Ingestion Pipeline</title><link>https://markdmh.uk/services/azure-databricks-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://markdmh.uk/services/azure-databricks-pipeline/</guid><description>&lt;h3 id="fixed-scope-databricks-pipeline-build"&gt;Fixed-scope Databricks pipeline build&lt;/h3&gt;
 &lt;p&gt;I offer a &lt;strong&gt;single, fixed-scope Databricks ingestion pipeline build&lt;/strong&gt; for teams using Azure.&lt;/p&gt;
 &lt;p&gt;Pricing ranges from &lt;strong&gt;£500–£750&lt;/strong&gt; depending on the complexity of the source system. Small, simple ingestion pipelines are around £500; more involved sources can reach £750. All work is fixed-scope and delivered within a short window.&lt;/p&gt;
 &lt;hr&gt;
@@ -30,12 +28,4 @@
 &lt;li&gt;&lt;strong&gt;Delivery window:&lt;/strong&gt; within 7 days of agreement&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Format:&lt;/strong&gt; code + brief documentation&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;A short clarification call may be scheduled to confirm the source complexity and final price.&lt;/p&gt;</description></item><item><title>Contact</title><link>https://markdmh.uk/contact/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://markdmh.uk/contact/contact/</guid><description>&lt;p&gt;The easiest way to get in touch is by email:&lt;/p&gt;
-&lt;p&gt;📧 &lt;strong&gt;&lt;a href="mailto:hello@markdmh.uk"&gt;hello@markdmh.uk&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;If you reach out, please include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A short description of the data source&lt;/li&gt;
-&lt;li&gt;Whether you’re already using Azure and Databricks&lt;/li&gt;
-&lt;li&gt;Any relevant timelines&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If the work isn’t a good fit for this service, I’ll say so up front.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;A short clarification call may be scheduled to confirm the source complexity and final price.&lt;/p&gt;</description></item></channel></rss>
