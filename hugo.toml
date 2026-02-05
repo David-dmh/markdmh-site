@@ -3,7 +3,8 @@ languageCode = "en-gb"
 title = "David Mark H"
 theme = "PaperMod"
 canonifyURLs = true
-relativeURLs = true
+relativeURLs = false
+uglyURLs = false
 
 [params]
   author = "admim"
