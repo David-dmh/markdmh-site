@@ -1,10 +1,12 @@
-name: Deploy Hugo site to GitHub Pages
+name: Deploy Hugo site
 
+# Trigger workflow on push to main
 on:
   push:
     branches:
       - main
 
+# Required permissions for Pages deployment
 permissions:
   contents: read
   pages: write
@@ -29,16 +31,16 @@ jobs:
       # Build Hugo site
       - name: Build Hugo site
         run: |
-          echo "Building Hugo site..."
+          echo "=== Building Hugo site ==="
           hugo --minify --verbose
-          echo "Build finished"
+          echo "=== Hugo build finished ==="
 
       # Add CNAME for apex domain
       - name: Add CNAME
         run: echo "markdmh.uk" > public/CNAME
 
-      # Upload public/ as artifact
-      - name: Upload public/ as artifact
+      # Upload public/ folder as artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: public
