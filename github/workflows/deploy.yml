@@ -25,12 +25,20 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      # Deploy to GitHub Pages
+      # Add CNAME for custom domain
+      - name: Add CNAME
+        run: echo "markdmh.uk" > public/CNAME
+
+      # Deploy directly to main branch root
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: main     # <--- deploy to main branch
+          user_name: "github-actions"
+          user_email: "github-actions@github.com"
+          keep_files: true         # preserve other files in main root
 
       # Test that deployed pages are reachable
       - name: Test Deployed Site
