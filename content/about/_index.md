@@ -1,7 +1,8 @@
 ---
 title: "About"
 menu: "main"
-weight: 20
+weight: 5
+draft: false
 ---
 
 I’m a data engineer and specialise in building data pipelines and platforms on Azure.  

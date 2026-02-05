@@ -1,5 +1,6 @@
 ---
 title: "Azure Databricks Ingestion Pipeline"
+draft: false
 ---
 
 ### Fixed-scope Databricks pipeline build

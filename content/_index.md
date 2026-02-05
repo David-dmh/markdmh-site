@@ -2,6 +2,7 @@
 title: "Home"
 menu: "main"
 weight: 1
+draft : false
 ---
 
 I build **production-ready Databricks ingestion pipelines on Azure** for early-stage teams.  
@@ -20,4 +21,4 @@ These projects are **small, focused, and fixed-scope**, designed to deliver func
 
 If you need a **straightforward pipeline built cleanly and handed over**, this service may be a good fit.  
 
-👉 See the [pipeline service](/services/azure-databricks-pipeline/) or get in touch via [email](/contact/).
+👉 See the [pipeline service](services/azure-databricks-pipeline/) or get in touch via [email](contact/).

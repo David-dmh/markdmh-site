@@ -1,7 +1,8 @@
 ---
 title: "Contact"
 menu: "main"
-weight: 30
+weight: 15
+draft: false
 ---
 
 The easiest way to get in touch is by email:

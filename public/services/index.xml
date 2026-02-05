@@ -1,8 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Services on David Mark H</title><link>https://markdmh.uk/services/</link><description>Recent content in Services on David Mark H</description><generator>Hugo -- 0.155.2</generator><language>en-gb</language><atom:link href="https://markdmh.uk/services/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Databricks Ingestion Pipeline</title><link>https://markdmh.uk/services/azure-databricks-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://markdmh.uk/services/azure-databricks-pipeline/</guid><description>&lt;h3 id="fixed-scope-databricks-pipeline-build"&gt;Fixed-scope Databricks pipeline build&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Services on David Mark H</title>
+    <link>http://localhost:1313/services/</link>
+    <description>Recent content in Services on David Mark H</description>
+    <generator>Hugo -- 0.155.2</generator>
+    <language>en-gb</language>
+    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Databricks Ingestion Pipeline</title>
+      <link>http://localhost:1313/services/azure-databricks-pipeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/azure-databricks-pipeline/</guid>
+      <description>&lt;h3 id=&#34;fixed-scope-databricks-pipeline-build&#34;&gt;Fixed-scope Databricks pipeline build&lt;/h3&gt;
 &lt;p&gt;I offer a &lt;strong&gt;single, fixed-scope Databricks ingestion pipeline build&lt;/strong&gt; for teams using Azure.&lt;/p&gt;
 &lt;p&gt;Pricing ranges from &lt;strong&gt;£500–£750&lt;/strong&gt; depending on the complexity of the source system. Small, simple ingestion pipelines are around £500; more involved sources can reach £750. All work is fixed-scope and delivered within a short window.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="whats-included"&gt;What’s included&lt;/h2&gt;
+&lt;h2 id=&#34;whats-included&#34;&gt;What’s included&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;One data source (API, database, or files)&lt;/li&gt;
 &lt;li&gt;Ingestion into &lt;strong&gt;Azure Data Lake Storage (Gen2)&lt;/strong&gt;&lt;/li&gt;
@@ -13,7 +27,7 @@
 &lt;li&gt;Short handover notes&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id="whats-not-included"&gt;What’s not included&lt;/h2&gt;
+&lt;h2 id=&#34;whats-not-included&#34;&gt;What’s not included&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Performance tuning or SLA guarantees&lt;/li&gt;
 &lt;li&gt;Cost optimisation&lt;/li&gt;
@@ -22,10 +36,13 @@
 &lt;li&gt;Work in regulated financial services environments&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id="delivery"&gt;Delivery&lt;/h2&gt;
+&lt;h2 id=&#34;delivery&#34;&gt;Delivery&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Time required:&lt;/strong&gt; ~5–8 hours total&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Delivery window:&lt;/strong&gt; within 7 days of agreement&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Format:&lt;/strong&gt; code + brief documentation&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;A short clarification call may be scheduled to confirm the source complexity and final price.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;A short clarification call may be scheduled to confirm the source complexity and final price.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
