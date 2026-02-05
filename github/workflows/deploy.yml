@@ -1,24 +1,23 @@
-name: Deploy Hugo site to main
+name: Deploy Hugo site to apex domain
 
 on:
   push:
     branches:
-      - main  # trigger deploy on push to main
+      - main
 
 permissions:
-  contents: write   # allows branch overwrite
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repo
+      # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true
-          fetch-depth: 0
+          fetch-depth: 0  # full history for worktree push
 
       # Install Hugo
       - name: Install Hugo
@@ -28,18 +27,36 @@ jobs:
           extended: true
 
       # Build Hugo site
-      - name: Build site
+      - name: Build Hugo site
         run: hugo --minify
 
-      # Ensure CNAME exists for custom domain
-      - name: Add CNAME
-        run: echo "markdmh.uk" > public/CNAME
+      # Deploy built site to main root without deleting source
+      - name: Deploy to main root
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # Deploy to main (root) for apex domain
-      - name: Deploy to main
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: main
-          keep_files: false  # overwrite old files
+          # Add a temporary worktree for root deployment
+          git worktree add deploy-temp main
+
+          # Copy Hugo public/ content into worktree
+          cp -r public/* deploy-temp/
+          echo "markdmh.uk" > deploy-temp/CNAME
+
+          # Commit and push changes from worktree
+          cd deploy-temp
+          git add --all
+          # Only commit if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "Automated Hugo deploy"
+            git push origin main
+          else
+            echo "No changes to deploy"
+          fi
+
+          # Cleanup worktree
+          cd ..
+          git worktree remove deploy-temp
