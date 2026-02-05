@@ -3,78 +3,43 @@ name: Deploy Hugo site to main
 on:
   push:
     branches:
-      - main
+      - main  # trigger deploy on push to main
 
 permissions:
-  contents: write
+  contents: write   # allows branch overwrite
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
+      # Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
 
+      # Install Hugo
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
 
+      # Build Hugo site
       - name: Build site
         run: hugo --minify
 
+      # Ensure CNAME exists for custom domain
       - name: Add CNAME
         run: echo "markdmh.uk" > public/CNAME
 
-      - name: Deploy to main (Pages)
+      # Deploy to main (root) for apex domain
+      - name: Deploy to main
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: main
-          keep_files: false
-name: Deploy Hugo site to main
-
-on:
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: write
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
-
-      - name: Install Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: 'latest'
-          extended: true
-
-      - name: Build site
-        run: hugo --minify
-
-      - name: Add CNAME
-        run: echo "markdmh.uk" > public/CNAME
-
-      - name: Deploy to main (Pages)
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: main
-          keep_files: false
+          keep_files: false  # overwrite old files
