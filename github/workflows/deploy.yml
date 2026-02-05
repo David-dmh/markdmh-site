@@ -1,4 +1,4 @@
-name: Deploy Hugo site
+name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
@@ -8,29 +8,41 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: write  # required for Pages deploy
+  id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      # Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Install Hugo
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
 
+      # Build Hugo site
       - name: Build Hugo site
-        run: hugo --minify
+        run: |
+          echo "Building Hugo site..."
+          hugo --minify --verbose
+          echo "Build finished"
 
+      # Add CNAME for apex domain
+      - name: Add CNAME
+        run: echo "markdmh.uk" > public/CNAME
+
+      # Upload public/ as artifact
       - name: Upload public/ as artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: public
 
+      # Deploy via GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
