@@ -11,6 +11,9 @@ uglyURLs = false
   description = "Independent Azure Databricks pipeline builds"
   ShowFooter = true
   ShowCopyright = true
+  defaultTheme = "dark"
+  disableThemeToggle = false
+
 
 [params.footer]
   text = "Independent work, outside primary employment."
