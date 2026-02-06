@@ -13,7 +13,7 @@ uglyURLs = false
   ShowCopyright = true
   defaultTheme = "dark"
   disableThemeToggle = false
-
+  env = "production"
 
 [params.footer]
   text = "Independent work, outside primary employment."
