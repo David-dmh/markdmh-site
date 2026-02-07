@@ -1,7 +1,7 @@
 ---
 title: "Home"
 menu: "main"
-weight: 4
+weight: 1
 draft: false
 ---
 
