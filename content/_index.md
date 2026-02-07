@@ -21,6 +21,6 @@ The work is **small, focused, and fixed-scope**, designed to deliver a working p
 
 If you need a **straightforward pipeline built cleanly and handed over**, this service may be a good fit.
 
-The work is delivered directly by me, David [Surname], operating as **DMH Consulting**.
+The work is delivered directly by me, David Herbert, operating as **DMH Consulting**.
 
 👉 See the [pipeline service](/services/azure-databricks-pipeline/) or get in touch via [email](/contact/).
