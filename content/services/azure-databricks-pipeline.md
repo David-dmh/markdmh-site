@@ -7,7 +7,7 @@ draft: false
 
 DMH Consulting offers a **single, fixed-scope Databricks ingestion pipeline build** for teams using Azure.
 
-Pricing typically ranges from **£500–£750**, depending on the complexity of the source system. Simple sources are usually at the lower end; more involved integrations fall toward the upper end. All work is fixed-scope and delivered within a short window.
+Pricing typically ranges from **£500–£1000**, depending on the complexity of the source system. Simple sources are usually at the lower end; more involved integrations fall toward the upper end. All work is fixed-scope and delivered within a short window.
 
 ---
 
