@@ -1,6 +1,6 @@
 ---
 title: "Services"
 menu: "main"
-weight: 10
+weight: 2
 draft: false
 ---
