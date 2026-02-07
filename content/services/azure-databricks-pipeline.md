@@ -7,19 +7,18 @@ draft: false
 
 DMH Consulting offers a **single, fixed-scope Databricks ingestion pipeline build** for teams using Azure.
 
-Pricing typically ranges from **£500–£1000**, depending on the complexity of the source system. Simple sources are usually at the lower end; more involved integrations fall toward the upper end. All work is fixed-scope and delivered within a short window.
+Pricing typically ranges from **£500–£1000**, depending on the complexity of the integration. All work is fixed-scope and delivered within a short window.
 
 ---
 
 ## What’s included
 
 - One data source (API, database, or files)
-- Ingestion into **Azure Data Lake Storage Gen2**
 - Processing using **Databricks**
-- Data written to **Delta Lake tables**
-- A scheduled Databricks job
-- Basic logging and error handling
-- Brief handover notes
+- Ingestion into **Azure sink**
+- Databricks job ready to run on-schedule / on-demand
+- Implementation according to best practices
+- Handover notes
 
 ---
 
@@ -35,18 +34,18 @@ Pricing typically ranges from **£500–£1000**, depending on the complexity of
 
 ## Delivery
 
-- **Time required:** approximately 5–8 hours
+- **Time required:** approximately 5–10 hours
 - **Delivery window:** within 7 days of agreement
-- **Format:** code plus brief documentation
+- **Format:** code plus documentation
 
-A short clarification call may be used to confirm source complexity and final pricing.
+A short clarification call may be used to confirm source complexity, time, delivery window and final pricing.
 
 ---
 
 ## Who this is for
 
-- Startups or small teams
-- Already using Azure and Databricks
+- Small teams
 - Need a clean ingestion pipeline built quickly
+- Already Databricks within an Azure environment
 
 If this sounds appropriate, feel free to get in touch via [email](/contact/).

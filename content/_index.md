@@ -10,8 +10,8 @@ DMH Consulting builds **production-ready Databricks ingestion pipelines on Azure
 The work is **small, focused, and fixed-scope**, designed to deliver a working pipeline quickly — without long-term commitments or ongoing maintenance.
 
 ### What I do
-- Build a single ingestion pipeline from a source system to a defined sink
-- Use **Databricks on Azure**
+- Build a single ingestion pipeline from a source system to a defined destination
+- Use **Databricks**
 - Deliver code and basic documentation within a defined timeline
 
 ### What I don’t do
