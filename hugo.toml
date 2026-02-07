@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-gb"
-title = "David Mark H"
+title = "DMH Consulting"
 theme = "PaperMod"
 canonifyURLs = true
 relativeURLs = false
@@ -8,7 +8,7 @@ uglyURLs = false
 
 [params]
   author = "admim"
-  description = "Independent Azure Databricks pipeline builds"
+  description = "Independent data engineering consultancy specialising in Azure Databricks pipeline builds."
   ShowFooter = true
   ShowCopyright = true
   defaultTheme = "dark"
@@ -16,7 +16,7 @@ uglyURLs = false
   env = "production"
 
 [params.footer]
-  text = "Independent work, outside primary employment."
+  text = "**Disclaimer:** DMH Consulting operates independently. All work is conducted outside of any employment obligations."
 
 [menu]
   [[menu.footer]]

@@ -5,8 +5,8 @@ weight: 5
 draft: false
 ---
 
-I’m a data engineer and specialise in building data pipelines and platforms on Azure.  
+DMH Consulting is run by **David [Surname]**, an independent data engineer specialising in Azure-based data platforms and Databricks.
 
-Outside of my primary work, I occasionally take on **small, focused pipeline projects** for early-stage teams. These projects are designed to deliver clear, functional results quickly, without long-term commitments or ongoing maintenance.
+The consultancy focuses on **small, well-defined ingestion pipeline projects** for early-stage teams that already use Azure. Work is scoped tightly, delivered quickly, and handed over cleanly.
 
-This site describes that service offering in a simple, transparent way.
+DMH Consulting does not operate as a full-service consultancy or managed service. The emphasis is on building a specific piece of data infrastructure clearly and pragmatically.
