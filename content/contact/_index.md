@@ -1,17 +1,26 @@
 ---
-title: "Contact"
+title: "Home"
 menu: "main"
-weight: 15
+weight: 1
 draft: false
 ---
 
-The easiest way to get in touch is by email:
+DMH Consulting builds **production-ready Databricks ingestion pipelines on Azure** for early-stage teams.
 
-📧 **hello@markdmh.uk**
+The work is **small, focused, and fixed-scope**, designed to deliver a working pipeline quickly — without long-term commitments or ongoing maintenance.
 
-If you reach out, please include:
-- A short description of the data source
-- Whether you’re already using Azure and Databricks
-- Any relevant timelines
+### What I do
+- Build a single ingestion pipeline from a source system to a defined sink
+- Use **Databricks on Azure**
+- Deliver code and basic documentation within a defined timeline
 
-If the work isn’t a good fit for this service, I’ll say so up front.
+### What I don’t do
+- Ongoing support or retainers
+- Performance or cost optimisation guarantees
+- Work in regulated financial services environments
+
+If you need a **straightforward pipeline built cleanly and handed over**, this service may be a good fit.
+
+The work is delivered directly by me, David [Surname], operating as **DMH Consulting**.
+
+👉 See the [pipeline service](/services/azure-databricks-pipeline/) or get in touch via [email](/contact/).

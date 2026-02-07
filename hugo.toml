@@ -7,7 +7,7 @@ relativeURLs = false
 uglyURLs = false
 
 [params]
-  author = "admim"
+  author = "admin"
   description = "Independent data engineering consultancy specialising in Azure Databricks pipeline builds."
   ShowFooter = true
   ShowCopyright = true
